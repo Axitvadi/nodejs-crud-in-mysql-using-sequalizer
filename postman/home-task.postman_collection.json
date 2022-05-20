@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "599159e6-2435-42fc-b13f-348e94998cec",
+		"name": "home-exercies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create-products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"name\":\"headphone\",\r\n    \"price\":450,\r\n    \"description\":\"good product\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/create-product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"create-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find-all-products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/all-products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"all-products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "one-products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/one-products/867ee39e-829e-4c51-addf-61b30ec462cc",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"one-products",
+						"867ee39e-829e-4c51-addf-61b30ec462cc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "most-viewed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/most-viewed",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"most-viewed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/delete-product/d2d53990-6f8e-4f45-9f09-213490821727",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"delete-product",
+						"d2d53990-6f8e-4f45-9f09-213490821727"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
